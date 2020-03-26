@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|PT+Serif:400i|Playfair+Display:400,700|Poppins:400,600,700|Roboto+Condensed|Roboto:300,400,400i,700&display=swap')
+
+$color-black: #000000
+$color-nav: #1668f0
+$color-link: #0a7bff
+$color-link-2: #073b78
+$color-gray: #bbbbbb
+$color-gray-2: #686868
+$color-gray-3: #f4f5f7
+.gray 
+	color: $color-gray
+
+$transition: .3s
+
+* 
+	outline: none !important
+
+img 
+	max-width: 100%
+	height: auto
+
+body 
+	font-family: 'Roboto', sans-serif
+
+a 
+	text-decoration: none !important
+	transition: .3s
+
+@media (min-width: 1200px)
+	.container 
+		max-width: 1200px
+
+.h1, h1
+	font-size: 30px
+	font-family: 'Alfa Slab One', sans-serif
+.h2, h2 
+	font-size: 24px
+	font-family: 'Playfair Display', sans-serif
+	font-weight: bold
+.h3, h3
+	font-size: 15px
+	font-family: 'Alfa Slab One', sans-serif
+
+.btn 
+	font-size: 17px
+	font-family: 'Roboto', sans-serif
+	transition: $transition
+	color: #fff
+	border-radius: 100px
+	background: $color-link
+	padding: 4.5px 12px
+	&:hover
+		background: $color-nav
+		color: #fff
+
+.form-control
+	border-radius: 100px
+	height: 34px
+	padding: 0 15px
+	min-width: 200px
+	&:focus
+		box-shadow: none
+
+.form-search
+	position: relative
+	button
+		transition: $transition
+		position: absolute
+		background: none
+		border: none
+		color: $color-nav
+		top: 50%
+		transform: translateY(-50%)
+		right: 10px
+		padding: 0
+		&:hover
+			opacity: .6
+
+.fz-10
+	font-size: 10px
+.fz-12
+	font-size: 12px
+.fz-13
+	font-size: 13px
+.fz-14
+	font-size: 14px
+.fz-15
+	font-size: 15px
+.fz-17
+	font-size: 17px
+
+.ptserif
+	font-family: 'PT Serif', sans-serif
+	font-weight: normal
+
+.mt-28
+	margin-top: 28px
+
+.navbar
+	transition: $transition
+	background: $color-nav !important
+	.navbar-toggler 
+		border: 0 !important
+		padding: 0 !important
+		color: #fff !important
+	.navbar-brand
+		font-family: 'Poppins', sans-serif
+		font-weight: bold
+		font-size: 18px
+		@media (min-width: 576px)
+			font-size: 23px
+	.form-control
+		height: 27px
+		border: 0
+		padding-right: 30px
+	.nav-link
+		color: #fff !important
+		font-family: 'RobotoCondensed', sans-serif
+		font-size: 11px
+		text-transform: uppercase
+		&:hover 
+			opacity: .6
+
+.left-border
+	border-left: 4px solid $color-link
+
+.a1
+	color: $color-black !important
+	&:hover
+		color: $color-nav !important
+.a2
+	color: $color-link
+	text-transform: uppercase
+	font-size: 11px
+	transition: $transition
+	display: inline-block
+	font-weight: bold
+	&:hover
+		opacity: .6
+
+.day 
+	color: $color-gray
+	font-weight: normal
+	font-size: 11px
+
+.row-1
+	margin-left: -6px
+	margin-right: -6px
+	[class*='col']
+		padding-left: 6px
+		padding-right: 6px
+
+.w-300
+	@media (min-width: 1200px)
+		width: 300px
+
+.img-wrap 
+	overflow: hidden
+	display: inline-block
+	font-size: 0
+	img 
+		transition: .3s
+	&:hover
+		img 
+			transform: scale(1.1)
+
+.news
+	border-top: 1px solid $color-gray-3
+	padding-top: 16px
+	padding-bottom: 16px	
